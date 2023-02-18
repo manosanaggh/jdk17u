@@ -65,4 +65,5 @@ void G1FullGCMarkTask::work(uint worker_id) {
   assert(marker->oop_stack()->is_empty(), "Marking should have completed");
   assert(marker->objarray_stack()->is_empty(), "Array marking should have completed");
   log_task("Marking task", worker_id, start);
+  log_info(gc,ergo)("******TESTING LOG!******");
 }
